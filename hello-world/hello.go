@@ -31,3 +31,13 @@ func main() {
 func shivam() {
 	fmt.Println("shivam!")
 }
+
+func init() {
+	fmt.Println("init func")
+	var out []int
+	for i := 0; i < 3; i++ {
+		fmt.Println("index: ", i)
+		out = append(out, i)
+	}
+	fmt.Println("Array: ", out)
+}
