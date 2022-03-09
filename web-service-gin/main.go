@@ -7,6 +7,7 @@ import (
 )
 
 type album struct {
+	// json tag to serialize json body
 	ID     string  `json:"id"`
 	Title  string  `json:"title"`
 	Artist string  `json:"artist"`
