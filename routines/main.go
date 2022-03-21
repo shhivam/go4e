@@ -78,16 +78,6 @@ func main() {
 	fmt.Println(real(hi))
 	fmt.Println(imag(hi))
 	fmt.Println(newtonSqrRoot(16, 0.001))
-	switch 13 {
-	case 12:
-		fmt.Println("hola world")
-	case 13:
-		fmt.Println("no hola world")
-	case 19:
-		fmt.Println("no nohola world")
-	default:
-		fmt.Println("default case")
-	}
 	resp, err := http.Get("http://127.0.0.1:5000/shivam")
 	if err != nil {
 		fmt.Println("Went wrong!", err)

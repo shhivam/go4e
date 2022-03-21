@@ -42,4 +42,16 @@ func WordCount(s string) map[string]int {
 func main() {
 	fmt.Println(WordCount("shivam is at at nilenso"))
 	fiboMain()
+
+	switch 13 {
+	case 12:
+		fmt.Println("hola world")
+	case 13:
+		fmt.Println("no hola world")
+	case 19:
+		fmt.Println("no nohola world")
+	default:
+		fmt.Println("default case")
+	}
+
 }
