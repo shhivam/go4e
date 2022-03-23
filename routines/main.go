@@ -1,6 +1,7 @@
 package main
 
 import (
+	"example.com/routines/channels"
 	"fmt"
 	"io/ioutil"
 	"math"
@@ -83,7 +84,7 @@ func main() {
 		fmt.Println("Went wrong!", err)
 	}
 
-	//fmt.Println("resp --> ", resp)
+	fmt.Println("resp --> ", resp)
 
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
@@ -94,4 +95,6 @@ func main() {
 	defer fmt.Println("defered Middle order")
 	defer add(34, 56)
 	defer add(10, 10)
+
+	channels.ChannelMain()
 }
